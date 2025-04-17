@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+#box{
+    height:65vh;
+    width: 160vh;
+    background-color: green;
+    display: flex;
+    border-radius: 3vh;
+}
+#left{
+    height:100%;
+    width: 50%;
+    background-color: gray;
+    position: relative;
+    border-top-left-radius: 3vh;
+    border-bottom-left-radius: 3vh;
+
+}
+#left img{
+    height: 100%;
+    width: 100%;
+}
+#right{
+    height:100%;
+    width: 50%;
+    background-color: yellow;
+    position: relative;
+    border-top-right-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+}
+#right img{
+    height: 100%;
+    width: 100%;
+}
+#right input{
+    position: absolute;
+    height: 5vh;
+    width: 30vh;
+    z-index: 99;
+    margin-left: -55vh;
+    margin-top: 46vh;
+    background-color:#8fdefd;
+    border: 2px solid #24578e;
+    border-radius: 8px;
+}
+#right button{
+    height: 7vh;
+    width: 17vh;
+    position: absolute;
+    margin-top: 55vh;
+    margin-left: -50vh;
+    font-size: 3vh;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    border-radius: 2vh;
+}
+.ballafter{
+    position: absolute;
+    right:1vh;
+}
+
+#note{
+    position: absolute;
+    top: 40vh;
+    left: 85vh;
+    width:500px;
+    position: absolute;
+    top: 38vh;
+    left: 85vh;
+    width:500px;
+    z-index: 10;
+    font-size: 2.35vh;
+   
+}
+#note p span{
+    font-weight: 800;
+}
+#ques{
+    position: absolute;
+    top: 20vh;
+    left: 85vh;
+    width:500px;
+    z-index: 10;
+    font-size:4vh;
+    font-weight: 600;
+    color: rgb(11, 23, 79);
+}
+.submit_mouseenter {
+    border: 2px solid yellow !important;
+    background-color: transparent !important;
+    color: yellow !important;
+}
+#popup{
+    height: 60vh;
+    width: 80vh;
+    background-image: url(https://st.depositphotos.com/1109793/3973/v/450/depositphotos_39734183-stock-illustration-foot-ball-fire.jpg);
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 4px 2px 10px 13px #0b174f;
+    top: 20%;
+    left: 30%;
+    z-index: 100;
+    transition: all 0.5 ease;
+    transition: 1s ease;
+}
+.bubbly-text {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: bubbleAnimation 2s ease-in-out infinite, glow 1.5s ease-in-out infinite alternate;
+    display: inline-block;
+    position: relative;
+    margin-left: -5vh;
+    margin-top: 1vh;
+    text-shadow: 0 0 15px rgba(172, 45, 45, 0.8), 0 0 30px rgba(193, 61, 61, 0.6), 0 0 45px rgba(255, 255, 255, 0.5);
+}
+
+    @keyframes bubbleAnimation {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .rocketanim{
+        animation: rocket_animation 2s ease-in-out infinite;
+    }
+
+    @keyframes rocket_animation {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    /* Keyframes for Glowing Effect */
+    @keyframes glow {
+        0% {
+            text-shadow: 0 0 15px #31D2F2, 0 0 30px #31D2F2, 0 0 45px #31D2F2;
+        }
+        100% {
+            text-shadow: 0 0 30px #31D2F2, 0 0 60px #31D2F2, 0 0 90px #31D2F2;
+        }
+    }
